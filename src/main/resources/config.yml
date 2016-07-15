@@ -1,0 +1,6 @@
+#set all jump blocks
+blocks:
+- 19 #sponge
+- 26 #bed
+
+jump_force: 3
