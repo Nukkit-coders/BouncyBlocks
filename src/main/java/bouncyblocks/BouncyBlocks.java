@@ -58,7 +58,7 @@ public class BouncyBlocks extends PluginBase implements Listener {
             return;
         }
 
-        if (p instanceof Player && e.getCause() == EntityDamageEvent.CAUSE_FALL) {
+        if (p instanceof Player && e.getCause() == EntityDamageEvent.DamageCause.FALL) {
             int id = p.getLevel().getBlockIdAt((int) p.x, (int) (p.y - 0.3), (int) p.z);
 
             if (blocks.contains(id)) {
